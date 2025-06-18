@@ -1,1 +1,49 @@
+HashSet in Java implements the Set interface of Collections Framework. It is used to store the unique elements and it doesn't maintain any specific order of elements.
 
+Can store the Null values.
+Uses HashMap (implementation of hash table data structure) internally.
+Also implements Serializable and Cloneable interfaces.
+HashSet is not thread-safe. So to make it thread-safe, synchronization is needed externally
+
+
+
+Instantiate an object of HashSet
+HashSet<Integer> hs = new HashSet<>();
+
+
+Methods--------
+
+1. Adding elements using add() method
+    hs.add("Geek");
+
+2.  Removing the element B
+        hs.remove("B");
+
+3. Iterating through the HashSet
+
+ // Using iterator() method to iterate
+      	// Over the HashSet
+        System.out.print("Using iterator : ");
+        Iterator<String> iterator = hs.iterator();
+      
+      	// Traversing HashSet
+        while (iterator.hasNext())
+            System.out.print(iterator.next() + ", ");
+
+        System.out.println();
+
+        // Using enhanced for loop to iterate
+      	// Over the HashSet
+        System.out.print("Using enhanced for loop : ");
+        for (String element : hs)
+         System.out.print(element + " , ");
+
+
+4.contains(Object o)
+Used to return true if an element is present in a set.
+
+5.isEmpty()
+Used to check whether the set is empty or not. Returns true for empty and false for a non-empty condition for set.
+
+6.size()
+Used to return the size of the set.
