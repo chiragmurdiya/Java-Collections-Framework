@@ -1,1 +1,7 @@
-
+Queue<Integer>que=new LinkedList<>();
+method-------
+1.poll()
+2.remove()
+3.peek()
+4.isEmpty()
+5.add()
